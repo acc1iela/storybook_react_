@@ -36,13 +36,9 @@ export default function Task({ task: { id, title, state }, onArchiveTask, onPinT
 Task.propTypes = {
   task: PropTypes.shape({
     id: PropTypes.string.isRequired,
-
     title: PropTypes.string.isRequired,
-
     state: PropTypes.string.isRequired,
   }),
-  /** Event to change the task to archived */
   onArchiveTask: PropTypes.func,
-  /** Event to change the task to pinned */
   onPinTask: PropTypes.func,
 };
